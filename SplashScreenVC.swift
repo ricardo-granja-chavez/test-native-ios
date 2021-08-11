@@ -18,7 +18,11 @@ class SplashScreenVC: UIViewController {
         self.setNeedsStatusBarAppearanceUpdate()
         UIView.animate(withDuration: 1, animations: {
             self.logoImageView.alpha = 1
-        })
+        }) { (_) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + Constants.SPLASH_SCREEN_DURATION) {
+                AppDelegate.standard.window?.rootViewController = UINavigationController(rootViewController: HomeVC())
+            }
+        }
     }
     
 }
