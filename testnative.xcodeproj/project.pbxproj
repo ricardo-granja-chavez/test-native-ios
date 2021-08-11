@@ -10,8 +10,6 @@
 		1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EA26C3927000CFDB21 /* AppDelegate.swift */; };
 		1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F326C3927100CFDB21 /* Assets.xcassets */; };
 		1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */; };
-		1D44410226C3975800CFDB21 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44410026C3975800CFDB21 /* SplashScreenVC.swift */; };
-		1D44410326C3975800CFDB21 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44410126C3975800CFDB21 /* SplashScreenVC.xib */; };
 		1D44410726C399F100CFDB21 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44410526C399F100CFDB21 /* HomeVC.swift */; };
 		1D44410826C399F100CFDB21 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44410626C399F100CFDB21 /* HomeVC.xib */; };
 		1D44410B26C39AAA00CFDB21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44410A26C39AAA00CFDB21 /* Constants.swift */; };
@@ -19,6 +17,8 @@
 		1D44411226C39E6400CFDB21 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44411126C39E6400CFDB21 /* MenuViewModel.swift */; };
 		1D44411626C39FC900CFDB21 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44411426C39FC900CFDB21 /* MenuCell.swift */; };
 		1D44411726C39FC900CFDB21 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411526C39FC900CFDB21 /* MenuCell.xib */; };
+		1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44411926C3A61C00CFDB21 /* SplashScreenVC.swift */; };
+		1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */; };
 		43C0490922B74A9A890C9422 /* Pods_testnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +29,6 @@
 		1D4440F326C3927100CFDB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4440F626C3927100CFDB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4440F826C3927100CFDB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D44410026C3975800CFDB21 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = SOURCE_ROOT; };
-		1D44410126C3975800CFDB21 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = SOURCE_ROOT; };
 		1D44410526C399F100CFDB21 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1D44410626C399F100CFDB21 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		1D44410A26C39AAA00CFDB21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -38,6 +36,8 @@
 		1D44411126C39E6400CFDB21 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		1D44411426C39FC900CFDB21 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		1D44411526C39FC900CFDB21 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		1D44411926C3A61C00CFDB21 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
 		6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testnative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD577C1BCF2BFA56A0444A /* Pods-testnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.release.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,8 +99,8 @@
 		1D4440FF26C3974900CFDB21 /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
-				1D44410026C3975800CFDB21 /* SplashScreenVC.swift */,
-				1D44410126C3975800CFDB21 /* SplashScreenVC.xib */,
+				1D44411926C3A61C00CFDB21 /* SplashScreenVC.swift */,
+				1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 				1D44410826C399F100CFDB21 /* HomeVC.xib in Resources */,
 				1D44411726C39FC900CFDB21 /* MenuCell.xib in Resources */,
 				1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */,
-				1D44410326C3975800CFDB21 /* SplashScreenVC.xib in Resources */,
+				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +281,10 @@
 			files = (
 				1D44411626C39FC900CFDB21 /* MenuCell.swift in Sources */,
 				1D44410F26C39DE800CFDB21 /* MenuTableView.swift in Sources */,
+				1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */,
 				1D44410726C399F100CFDB21 /* HomeVC.swift in Sources */,
 				1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */,
 				1D44411226C39E6400CFDB21 /* MenuViewModel.swift in Sources */,
-				1D44410226C3975800CFDB21 /* SplashScreenVC.swift in Sources */,
 				1D44410B26C39AAA00CFDB21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
