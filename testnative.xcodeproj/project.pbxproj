@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EA26C3927000CFDB21 /* AppDelegate.swift */; };
-		1D4440ED26C3927000CFDB21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EC26C3927000CFDB21 /* SceneDelegate.swift */; };
-		1D4440EF26C3927000CFDB21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EE26C3927000CFDB21 /* ViewController.swift */; };
-		1D4440F226C3927000CFDB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F026C3927000CFDB21 /* Main.storyboard */; };
 		1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F326C3927100CFDB21 /* Assets.xcassets */; };
 		1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */; };
+		1D44410226C3975800CFDB21 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44410026C3975800CFDB21 /* SplashScreenVC.swift */; };
+		1D44410326C3975800CFDB21 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44410126C3975800CFDB21 /* SplashScreenVC.xib */; };
 		43C0490922B74A9A890C9422 /* Pods_testnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +19,11 @@
 		116DDA4FA49A3676302631D9 /* Pods-testnative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.debug.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.debug.xcconfig"; sourceTree = "<group>"; };
 		1D4440E726C3927000CFDB21 /* testnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4440EA26C3927000CFDB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D4440EC26C3927000CFDB21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D4440EE26C3927000CFDB21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D4440F126C3927000CFDB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D4440F326C3927100CFDB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4440F626C3927100CFDB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4440F826C3927100CFDB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D44410026C3975800CFDB21 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = SOURCE_ROOT; };
+		1D44410126C3975800CFDB21 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = SOURCE_ROOT; };
 		6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testnative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD577C1BCF2BFA56A0444A /* Pods-testnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.release.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +61,30 @@
 		1D4440E926C3927000CFDB21 /* testnative */ = {
 			isa = PBXGroup;
 			children = (
+				1D4440FE26C3973B00CFDB21 /* View+Controllers */,
 				1D4440EA26C3927000CFDB21 /* AppDelegate.swift */,
-				1D4440EC26C3927000CFDB21 /* SceneDelegate.swift */,
-				1D4440EE26C3927000CFDB21 /* ViewController.swift */,
-				1D4440F026C3927000CFDB21 /* Main.storyboard */,
 				1D4440F326C3927100CFDB21 /* Assets.xcassets */,
 				1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */,
 				1D4440F826C3927100CFDB21 /* Info.plist */,
 			);
 			path = testnative;
+			sourceTree = "<group>";
+		};
+		1D4440FE26C3973B00CFDB21 /* View+Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D4440FF26C3974900CFDB21 /* SplashScreen */,
+			);
+			path = "View+Controllers";
+			sourceTree = "<group>";
+		};
+		1D4440FF26C3974900CFDB21 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1D44410026C3975800CFDB21 /* SplashScreenVC.swift */,
+				1D44410126C3975800CFDB21 /* SplashScreenVC.xib */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 		4B8285FA6647E26C37EAD12E /* Frameworks */ = {
@@ -88,7 +101,6 @@
 				116DDA4FA49A3676302631D9 /* Pods-testnative.debug.xcconfig */,
 				B6FD577C1BCF2BFA56A0444A /* Pods-testnative.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,7 +164,7 @@
 			files = (
 				1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */,
 				1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */,
-				1D4440F226C3927000CFDB21 /* Main.storyboard in Resources */,
+				1D44410326C3975800CFDB21 /* SplashScreenVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,23 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4440EF26C3927000CFDB21 /* ViewController.swift in Sources */,
 				1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */,
-				1D4440ED26C3927000CFDB21 /* SceneDelegate.swift in Sources */,
+				1D44410226C3975800CFDB21 /* SplashScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D4440F026C3927000CFDB21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D4440F126C3927000CFDB21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
