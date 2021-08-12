@@ -19,6 +19,12 @@
 		1D44411726C39FC900CFDB21 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411526C39FC900CFDB21 /* MenuCell.xib */; };
 		1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44411926C3A61C00CFDB21 /* SplashScreenVC.swift */; };
 		1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */; };
+		1D44412026C3A6E300CFDB21 /* LabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44411E26C3A6E300CFDB21 /* LabelVC.swift */; };
+		1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411F26C3A6E300CFDB21 /* LabelVC.xib */; };
+		1D6A5F8826C4DFCD00617EAD /* FontNamesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */; };
+		1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */; };
+		1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB681126C3B2B500DBA66A /* ColorCell.swift */; };
+		1DAB681426C3B2B500DBA66A /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB681226C3B2B500DBA66A /* ColorCell.xib */; };
 		43C0490922B74A9A890C9422 /* Pods_testnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +44,12 @@
 		1D44411526C39FC900CFDB21 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		1D44411926C3A61C00CFDB21 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
+		1D44411E26C3A6E300CFDB21 /* LabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelVC.swift; sourceTree = "<group>"; };
+		1D44411F26C3A6E300CFDB21 /* LabelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelVC.xib; sourceTree = "<group>"; };
+		1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontNamesPickerView.swift; sourceTree = "<group>"; };
+		1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionView.swift; sourceTree = "<group>"; };
+		1DAB681126C3B2B500DBA66A /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		1DAB681226C3B2B500DBA66A /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
 		6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testnative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD577C1BCF2BFA56A0444A /* Pods-testnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.release.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +120,7 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D44411D26C3A6CF00CFDB21 /* Label */,
 				1D44410526C399F100CFDB21 /* HomeVC.swift */,
 				1D44410626C399F100CFDB21 /* HomeVC.xib */,
 			);
@@ -125,6 +138,8 @@
 		1D44410C26C39DB300CFDB21 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1D60F3C526C4336A0017DDDA /* PickerViews */,
+				1DAB680D26C3B20100DBA66A /* CollectionViews */,
 				1D44411326C39F8600CFDB21 /* Cells */,
 				1D44410D26C39DC500CFDB21 /* TableViews */,
 			);
@@ -150,6 +165,7 @@
 		1D44411326C39F8600CFDB21 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1DAB681026C3B29F00DBA66A /* Color */,
 				1D44411826C39FCE00CFDB21 /* Menu */,
 			);
 			path = Cells;
@@ -162,6 +178,40 @@
 				1D44411526C39FC900CFDB21 /* MenuCell.xib */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		1D44411D26C3A6CF00CFDB21 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				1D44411E26C3A6E300CFDB21 /* LabelVC.swift */,
+				1D44411F26C3A6E300CFDB21 /* LabelVC.xib */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		1D60F3C526C4336A0017DDDA /* PickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */,
+			);
+			path = PickerViews;
+			sourceTree = "<group>";
+		};
+		1DAB680D26C3B20100DBA66A /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		1DAB681026C3B29F00DBA66A /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				1DAB681126C3B2B500DBA66A /* ColorCell.swift */,
+				1DAB681226C3B2B500DBA66A /* ColorCell.xib */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		4B8285FA6647E26C37EAD12E /* Frameworks */ = {
@@ -244,6 +294,8 @@
 				1D44411726C39FC900CFDB21 /* MenuCell.xib in Resources */,
 				1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */,
 				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
+				1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */,
+				1DAB681426C3B2B500DBA66A /* ColorCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +332,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D44411626C39FC900CFDB21 /* MenuCell.swift in Sources */,
+				1D44412026C3A6E300CFDB21 /* LabelVC.swift in Sources */,
 				1D44410F26C39DE800CFDB21 /* MenuTableView.swift in Sources */,
+				1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */,
 				1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */,
 				1D44410726C399F100CFDB21 /* HomeVC.swift in Sources */,
 				1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */,
 				1D44411226C39E6400CFDB21 /* MenuViewModel.swift in Sources */,
+				1D6A5F8826C4DFCD00617EAD /* FontNamesPickerView.swift in Sources */,
+				1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */,
 				1D44410B26C39AAA00CFDB21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

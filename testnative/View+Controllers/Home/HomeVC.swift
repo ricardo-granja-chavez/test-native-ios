@@ -25,7 +25,7 @@ class HomeVC: UIViewController {
         menuTableView.onTap = { (item) in
             switch item.type {
             case .label:
-                break
+                self.navigationController?.pushViewController(LabelVC(), animated: true)
             }
         }
     }
