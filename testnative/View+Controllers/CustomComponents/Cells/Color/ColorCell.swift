@@ -14,21 +14,30 @@ class ColorCell: UICollectionViewCell {
     
     @IBOutlet weak var meshView: UIView!
     @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var diagonalLineImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        meshView.layer.cornerRadius = 5
-        colorView.layer.cornerRadius = colorView.frame.height / 2
     }
     
     func configure(color: UIColor, selected: Bool) {
         meshView.backgroundColor = selected ? .lightGray : .clear
         colorView.backgroundColor = color
         
+        meshView.layer.cornerRadius = 5
+        colorView.layer.cornerRadius = colorView.frame.height / 2
+        diagonalLineImageView.isHidden = true
+        
         if color == .white || color == .yellow {
             colorView.layer.borderWidth = 0.5
             colorView.layer.borderColor = UIColor.black.cgColor
+        } else if color == .black {
+            colorView.layer.borderWidth = 0.5
+            colorView.layer.borderColor = UIColor.gray.cgColor
+        } else if color == .clear {
+            colorView.layer.borderWidth = 0.5
+            colorView.layer.borderColor = UIColor.gray.cgColor
+            diagonalLineImageView.isHidden = false
         } else {
             colorView.layer.borderWidth = 0
             colorView.layer.borderColor = nil

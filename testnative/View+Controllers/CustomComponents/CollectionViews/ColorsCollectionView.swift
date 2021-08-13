@@ -8,11 +8,11 @@
 import UIKit
 
 class ColorsCollectionView: UICollectionView {
-    private let collection: [UIColor] =  [.black, .blue, .brown, .cyan, .gray,
+    private let collection: [UIColor] =  [.clear, .black, .blue, .brown, .cyan, .gray,
                                   .green, .magenta, .orange, .purple, .red,
                                   .systemBlue, .systemGreen, .systemIndigo, .systemOrange, .systemPink,
                                   .systemPurple, .systemRed, .systemTeal, .systemYellow, .white, .yellow]
-    private var tapItem: Int = 0
+    public var selectedColor: UIColor = .black
     
     public var onTap: (UIColor) -> Void = { (_) in }
 }
@@ -31,8 +31,8 @@ extension ColorsCollectionView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item
         let color = collection[index]
-        tapItem = index
-        onTap(color)
+        selectedColor = color
+        onTap(selectedColor)
     }
 }
 
@@ -43,7 +43,7 @@ extension ColorsCollectionView: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorCell.identifier, for: indexPath) as! ColorCell
         let index = indexPath.item
         let color = collection[index]
-        cell.configure(color: color, selected: tapItem == index)
+        cell.configure(color: color, selected: selectedColor == color)
         return cell
     }
     

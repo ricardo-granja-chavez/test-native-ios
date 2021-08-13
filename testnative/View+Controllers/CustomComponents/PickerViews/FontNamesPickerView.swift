@@ -10,7 +10,8 @@ import UIKit
 class FontNamesPickerView: UIPickerView {
     private var collection: [String] = []
     
-    public var getFont: (String) -> Void = { (_) in }
+    public var initialFontName: String = ""
+    public var getFontName: (String) -> Void = { (_) in }
     
     func getFontNames() {
         UIFont.familyNames.forEach { (family) in
@@ -28,7 +29,7 @@ extension FontNamesPickerView: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let data = collection[row]
-        getFont(data)
+        getFontName(data)
         return data
     }
 }

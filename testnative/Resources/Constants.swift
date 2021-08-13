@@ -8,6 +8,6 @@
 import Foundation
 
 class Constants {
-    static let SPLASH_SCREEN_DURATION: Double = 0.5
+    static let SPLASH_SCREEN_DURATION: Double = 0.2
     
 }
