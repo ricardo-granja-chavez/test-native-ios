@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
     @IBOutlet weak var menuTableView: MenuTableView!
     
     override func viewDidLoad() {
@@ -20,18 +20,21 @@ class HomeVC: UIViewController {
         menuTableView.delegate = menuTableView
         menuTableView.dataSource = menuTableView
         menuTableView.rowHeight = MenuCell.height
-        menuTableView.collection = [MenuViewModel(image: UIImage(systemName: "textformat.alt")!,
-                                                  type: .label),
-                                    MenuViewModel(image: UIImage(systemName: "text.cursor")!,
-                                                                              type: .textField),]
         menuTableView.onTap = { (item) in
             switch item.type {
             case .label:
                 self.navigationController?.pushViewController(LabelVC(), animated: true)
+            case .button:
+                self.navigationController?.pushViewController(ButtonVC(), animated: true)
             case .textField:
                 self.navigationController?.pushViewController(TextFieldVC(), animated: true)
             }
         }
     }
+}
 
+enum MenuType: String {
+    case button = "Button"
+    case label = "Label"
+    case textField = "Text Field"
 }

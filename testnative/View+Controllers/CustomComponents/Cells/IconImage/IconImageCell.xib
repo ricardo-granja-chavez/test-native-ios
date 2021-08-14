@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IconImageCell" id="gTV-IL-0wX" customClass="IconImageCell" customModule="testnative" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lz6-VW-IuP">
+                        <rect key="frame" x="0.0" y="-1" width="70" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="2Ue-OX-zTj"/>
+                            <constraint firstAttribute="height" constant="70" id="9Xh-Al-tx4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="x7n-qc-gfj"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lz6-VW-IuP" secondAttribute="bottom" id="5se-md-PIf"/>
+                <constraint firstItem="lz6-VW-IuP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JjD-ZD-pXu"/>
+                <constraint firstItem="lz6-VW-IuP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YRK-HB-zcc"/>
+                <constraint firstAttribute="trailing" secondItem="lz6-VW-IuP" secondAttribute="trailing" id="yHC-na-8iA"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="lz6-VW-IuP" id="xSX-qX-pB2"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="137"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+    </resources>
+</document>

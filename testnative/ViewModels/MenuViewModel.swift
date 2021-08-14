@@ -12,8 +12,3 @@ struct MenuViewModel {
     let image: UIImage
     let type: MenuType
 }
-
-enum MenuType: String {
-    case label = "Label"
-    case textField = "Text Field"
-}

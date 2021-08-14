@@ -22,9 +22,9 @@ class ColorCell: UICollectionViewCell {
     
     func configure(color: UIColor, selected: Bool) {
         meshView.backgroundColor = selected ? .lightGray : .clear
-        colorView.backgroundColor = color
-        
         meshView.layer.cornerRadius = 5
+        
+        colorView.backgroundColor = color
         colorView.layer.cornerRadius = colorView.frame.height / 2
         diagonalLineImageView.isHidden = true
         
