@@ -21,11 +21,15 @@ class HomeVC: UIViewController {
         menuTableView.dataSource = menuTableView
         menuTableView.rowHeight = MenuCell.height
         menuTableView.collection = [MenuViewModel(image: UIImage(systemName: "textformat.alt")!,
-                                                  type: .label)]
+                                                  type: .label),
+                                    MenuViewModel(image: UIImage(systemName: "text.cursor")!,
+                                                                              type: .textField),]
         menuTableView.onTap = { (item) in
             switch item.type {
             case .label:
                 self.navigationController?.pushViewController(LabelVC(), animated: true)
+            case .textField:
+                self.navigationController?.pushViewController(TextFieldVC(), animated: true)
             }
         }
     }
