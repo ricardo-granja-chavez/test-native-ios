@@ -31,6 +31,11 @@
 		1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */; };
 		1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB681126C3B2B500DBA66A /* ColorCell.swift */; };
 		1DAB681426C3B2B500DBA66A /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB681226C3B2B500DBA66A /* ColorCell.xib */; };
+		1DAFA18C26C743B9008B6CB9 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFA18A26C743B9008B6CB9 /* ButtonVC.swift */; };
+		1DAFA18D26C743B9008B6CB9 /* ButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAFA18B26C743B9008B6CB9 /* ButtonVC.xib */; };
+		1DAFA19126C79DE6008B6CB9 /* IconImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFA18F26C79DE6008B6CB9 /* IconImageCell.swift */; };
+		1DAFA19226C79DE6008B6CB9 /* IconImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAFA19026C79DE6008B6CB9 /* IconImageCell.xib */; };
+		1DDF929826C85110008F7C96 /* IconImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF929726C85110008F7C96 /* IconImagePickerView.swift */; };
 		43C0490922B74A9A890C9422 /* Pods_testnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +67,11 @@
 		1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionView.swift; sourceTree = "<group>"; };
 		1DAB681126C3B2B500DBA66A /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		1DAB681226C3B2B500DBA66A /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
+		1DAFA18A26C743B9008B6CB9 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
+		1DAFA18B26C743B9008B6CB9 /* ButtonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonVC.xib; sourceTree = "<group>"; };
+		1DAFA18F26C79DE6008B6CB9 /* IconImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageCell.swift; sourceTree = "<group>"; };
+		1DAFA19026C79DE6008B6CB9 /* IconImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconImageCell.xib; sourceTree = "<group>"; };
+		1DDF929726C85110008F7C96 /* IconImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImagePickerView.swift; sourceTree = "<group>"; };
 		6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testnative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD577C1BCF2BFA56A0444A /* Pods-testnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.release.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +151,7 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1DAFA18926C7439A008B6CB9 /* Button */,
 				1D62B53726C663A200D8041D /* TextField */,
 				1D44411D26C3A6CF00CFDB21 /* Label */,
 				1D44410526C399F100CFDB21 /* HomeVC.swift */,
@@ -188,6 +199,7 @@
 		1D44411326C39F8600CFDB21 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1DAFA18E26C79DBF008B6CB9 /* IconImage */,
 				1D22999526C71A60003A7FC4 /* Selection */,
 				1DAB681026C3B29F00DBA66A /* Color */,
 				1D44411826C39FCE00CFDB21 /* Menu */,
@@ -217,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */,
+				1DDF929726C85110008F7C96 /* IconImagePickerView.swift */,
 			);
 			path = PickerViews;
 			sourceTree = "<group>";
@@ -254,6 +267,24 @@
 				1DAB681226C3B2B500DBA66A /* ColorCell.xib */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		1DAFA18926C7439A008B6CB9 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1DAFA18A26C743B9008B6CB9 /* ButtonVC.swift */,
+				1DAFA18B26C743B9008B6CB9 /* ButtonVC.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		1DAFA18E26C79DBF008B6CB9 /* IconImage */ = {
+			isa = PBXGroup;
+			children = (
+				1DAFA18F26C79DE6008B6CB9 /* IconImageCell.swift */,
+				1DAFA19026C79DE6008B6CB9 /* IconImageCell.xib */,
+			);
+			path = IconImage;
 			sourceTree = "<group>";
 		};
 		4B8285FA6647E26C37EAD12E /* Frameworks */ = {
@@ -335,10 +366,12 @@
 				1D44410826C399F100CFDB21 /* HomeVC.xib in Resources */,
 				1D60F4E026C6647F00644F65 /* TextFieldVC.xib in Resources */,
 				1D44411726C39FC900CFDB21 /* MenuCell.xib in Resources */,
+				1DAFA19226C79DE6008B6CB9 /* IconImageCell.xib in Resources */,
 				1D22999926C71A75003A7FC4 /* SelectionCell.xib in Resources */,
 				1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */,
 				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
 				1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */,
+				1DAFA18D26C743B9008B6CB9 /* ButtonVC.xib in Resources */,
 				1DAB681426C3B2B500DBA66A /* ColorCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +412,7 @@
 				1D60F4DF26C6647F00644F65 /* TextFieldVC.swift in Sources */,
 				1D22999826C71A75003A7FC4 /* SelectionCell.swift in Sources */,
 				1D44412026C3A6E300CFDB21 /* LabelVC.swift in Sources */,
+				1DAFA19126C79DE6008B6CB9 /* IconImageCell.swift in Sources */,
 				1D22999426C719AE003A7FC4 /* SelectionCollectionView.swift in Sources */,
 				1D44410F26C39DE800CFDB21 /* MenuTableView.swift in Sources */,
 				1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */,
@@ -387,8 +421,10 @@
 				1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */,
 				1D62B53626C653EF00D8041D /* DiagonalView.swift in Sources */,
 				1D44411226C39E6400CFDB21 /* MenuViewModel.swift in Sources */,
+				1DDF929826C85110008F7C96 /* IconImagePickerView.swift in Sources */,
 				1D6A5F8826C4DFCD00617EAD /* FontNamesPickerView.swift in Sources */,
 				1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */,
+				1DAFA18C26C743B9008B6CB9 /* ButtonVC.swift in Sources */,
 				1D44410B26C39AAA00CFDB21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,12 +26,23 @@ extension FontNamesPickerView: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int { 1 }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int { collection.count }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let data = collection[row]
-        getFontName(data)
-        return data
-    }
 }
 
-extension FontNamesPickerView: UIPickerViewDelegate { }
+extension FontNamesPickerView: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        guard let pickerLabel: UILabel = (view as? UILabel) else {
+            let pickerLabel = UILabel()
+            pickerLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+            pickerLabel.textAlignment = .center
+            pickerLabel.text = collection[row]
+            pickerLabel.textColor = .label
+            return pickerLabel
+        }
+        return pickerLabel
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let data = collection[row]
+        getFontName(data)
+    }
+}
