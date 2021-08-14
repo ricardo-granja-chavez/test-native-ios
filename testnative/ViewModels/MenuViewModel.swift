@@ -15,4 +15,5 @@ struct MenuViewModel {
 
 enum MenuType: String {
     case label = "Label"
+    case textField = "Text Field"
 }

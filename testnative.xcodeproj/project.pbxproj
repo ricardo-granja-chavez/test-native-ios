@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D22999426C719AE003A7FC4 /* SelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22999326C719AE003A7FC4 /* SelectionCollectionView.swift */; };
+		1D22999826C71A75003A7FC4 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22999626C71A75003A7FC4 /* SelectionCell.swift */; };
+		1D22999926C71A75003A7FC4 /* SelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D22999726C71A75003A7FC4 /* SelectionCell.xib */; };
 		1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EA26C3927000CFDB21 /* AppDelegate.swift */; };
 		1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F326C3927100CFDB21 /* Assets.xcassets */; };
 		1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */; };
@@ -21,6 +24,8 @@
 		1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */; };
 		1D44412026C3A6E300CFDB21 /* LabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44411E26C3A6E300CFDB21 /* LabelVC.swift */; };
 		1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D44411F26C3A6E300CFDB21 /* LabelVC.xib */; };
+		1D60F4DF26C6647F00644F65 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60F4DD26C6647F00644F65 /* TextFieldVC.swift */; };
+		1D60F4E026C6647F00644F65 /* TextFieldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D60F4DE26C6647F00644F65 /* TextFieldVC.xib */; };
 		1D62B53626C653EF00D8041D /* DiagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62B53526C653EF00D8041D /* DiagonalView.swift */; };
 		1D6A5F8826C4DFCD00617EAD /* FontNamesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */; };
 		1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */; };
@@ -31,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		116DDA4FA49A3676302631D9 /* Pods-testnative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.debug.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.debug.xcconfig"; sourceTree = "<group>"; };
+		1D22999326C719AE003A7FC4 /* SelectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCollectionView.swift; sourceTree = "<group>"; };
+		1D22999626C71A75003A7FC4 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
+		1D22999726C71A75003A7FC4 /* SelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCell.xib; sourceTree = "<group>"; };
 		1D4440E726C3927000CFDB21 /* testnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4440EA26C3927000CFDB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4440F326C3927100CFDB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +55,8 @@
 		1D44411A26C3A61C00CFDB21 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
 		1D44411E26C3A6E300CFDB21 /* LabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelVC.swift; sourceTree = "<group>"; };
 		1D44411F26C3A6E300CFDB21 /* LabelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelVC.xib; sourceTree = "<group>"; };
+		1D60F4DD26C6647F00644F65 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
+		1D60F4DE26C6647F00644F65 /* TextFieldVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldVC.xib; sourceTree = "<group>"; };
 		1D62B53526C653EF00D8041D /* DiagonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalView.swift; sourceTree = "<group>"; };
 		1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontNamesPickerView.swift; sourceTree = "<group>"; };
 		1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionView.swift; sourceTree = "<group>"; };
@@ -68,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D22999526C71A60003A7FC4 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				1D22999626C71A75003A7FC4 /* SelectionCell.swift */,
+				1D22999726C71A75003A7FC4 /* SelectionCell.xib */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
 		1D4440DE26C3927000CFDB21 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +141,7 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D62B53726C663A200D8041D /* TextField */,
 				1D44411D26C3A6CF00CFDB21 /* Label */,
 				1D44410526C399F100CFDB21 /* HomeVC.swift */,
 				1D44410626C399F100CFDB21 /* HomeVC.xib */,
@@ -168,6 +188,7 @@
 		1D44411326C39F8600CFDB21 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1D22999526C71A60003A7FC4 /* Selection */,
 				1DAB681026C3B29F00DBA66A /* Color */,
 				1D44411826C39FCE00CFDB21 /* Menu */,
 			);
@@ -208,10 +229,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1D62B53726C663A200D8041D /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				1D60F4DD26C6647F00644F65 /* TextFieldVC.swift */,
+				1D60F4DE26C6647F00644F65 /* TextFieldVC.xib */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		1DAB680D26C3B20100DBA66A /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
 				1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */,
+				1D22999326C719AE003A7FC4 /* SelectionCollectionView.swift */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -302,7 +333,9 @@
 			files = (
 				1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */,
 				1D44410826C399F100CFDB21 /* HomeVC.xib in Resources */,
+				1D60F4E026C6647F00644F65 /* TextFieldVC.xib in Resources */,
 				1D44411726C39FC900CFDB21 /* MenuCell.xib in Resources */,
+				1D22999926C71A75003A7FC4 /* SelectionCell.xib in Resources */,
 				1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */,
 				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
 				1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */,
@@ -343,7 +376,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D44411626C39FC900CFDB21 /* MenuCell.swift in Sources */,
+				1D60F4DF26C6647F00644F65 /* TextFieldVC.swift in Sources */,
+				1D22999826C71A75003A7FC4 /* SelectionCell.swift in Sources */,
 				1D44412026C3A6E300CFDB21 /* LabelVC.swift in Sources */,
+				1D22999426C719AE003A7FC4 /* SelectionCollectionView.swift in Sources */,
 				1D44410F26C39DE800CFDB21 /* MenuTableView.swift in Sources */,
 				1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */,
 				1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */,
