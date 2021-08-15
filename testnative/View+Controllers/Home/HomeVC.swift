@@ -22,22 +22,25 @@ class HomeVC: UIViewController {
         menuTableView.rowHeight = MenuCell.height
         menuTableView.onTap = { (item) in
             switch item.type {
-            case .label:
-                self.navigationController?.pushViewController(LabelVC(), animated: true)
-            case .button:
+            case .Button:
                 self.navigationController?.pushViewController(ButtonVC(), animated: true)
-            case .textField:
-                self.navigationController?.pushViewController(TextFieldVC(), animated: true)
-            case .slider:
+            case .Label:
+                self.navigationController?.pushViewController(LabelVC(), animated: true)
+            case .Slider:
                 self.navigationController?.pushViewController(SliderVC(), animated: true)
+            case .Switch:
+                self.navigationController?.pushViewController(SwitchVC(), animated: true)
+            case .TextField:
+                self.navigationController?.pushViewController(TextFieldVC(), animated: true)
             }
         }
     }
 }
 
 enum MenuType: String {
-    case button = "Button"
-    case label = "Label"
-    case textField = "Text Field"
-    case slider = "Slider"
+    case Button = "Button"
+    case Label = "Label"
+    case TextField = "Text Field"
+    case Slider = "Slider"
+    case Switch = "Switch"
 }
