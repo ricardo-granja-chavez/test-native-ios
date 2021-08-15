@@ -28,6 +28,8 @@ class HomeVC: UIViewController {
                 self.navigationController?.pushViewController(ButtonVC(), animated: true)
             case .textField:
                 self.navigationController?.pushViewController(TextFieldVC(), animated: true)
+            case .slider:
+                self.navigationController?.pushViewController(SliderVC(), animated: true)
             }
         }
     }
@@ -37,4 +39,5 @@ enum MenuType: String {
     case button = "Button"
     case label = "Label"
     case textField = "Text Field"
+    case slider = "Slider"
 }
