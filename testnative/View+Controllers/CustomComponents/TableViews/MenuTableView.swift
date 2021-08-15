@@ -12,8 +12,11 @@ class MenuTableView: UITableView {
                                                              type: .button),
                                                MenuViewModel(image: UIImage(systemName: "textformat.alt")!,
                                                              type: .label),
+                                               MenuViewModel(image: UIImage(systemName: "slider.horizontal.3")!,
+                                                             type: .slider),
                                                MenuViewModel(image: UIImage(systemName: "text.cursor")!,
                                                              type: .textField)]
+    
     public var onTap: (MenuViewModel) -> Void = { (_) in}
 }
 
