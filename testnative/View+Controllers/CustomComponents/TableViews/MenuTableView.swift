@@ -9,13 +9,15 @@ import UIKit
 
 class MenuTableView: UITableView {
     private let collection: [MenuViewModel] = [MenuViewModel(image: UIImage(systemName: "hand.tap.fill")!,
-                                                             type: .button),
+                                                             type: .Button),
                                                MenuViewModel(image: UIImage(systemName: "textformat.alt")!,
-                                                             type: .label),
+                                                             type: .Label),
                                                MenuViewModel(image: UIImage(systemName: "slider.horizontal.3")!,
-                                                             type: .slider),
+                                                             type: .Slider),
+                                               MenuViewModel(image: UIImage(systemName: "switch.2")!,
+                                                             type: .Switch),
                                                MenuViewModel(image: UIImage(systemName: "text.cursor")!,
-                                                             type: .textField)]
+                                                             type: .TextField)]
     
     public var onTap: (MenuViewModel) -> Void = { (_) in}
 }

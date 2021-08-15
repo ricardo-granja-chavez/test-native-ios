@@ -38,6 +38,8 @@
 		1DAFA19126C79DE6008B6CB9 /* IconImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFA18F26C79DE6008B6CB9 /* IconImageCell.swift */; };
 		1DAFA19226C79DE6008B6CB9 /* IconImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAFA19026C79DE6008B6CB9 /* IconImageCell.xib */; };
 		1DDF929826C85110008F7C96 /* IconImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF929726C85110008F7C96 /* IconImagePickerView.swift */; };
+		1DDFD31226C8FA5600E90F28 /* SwitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD31026C8FA5600E90F28 /* SwitchVC.swift */; };
+		1DDFD31326C8FA5600E90F28 /* SwitchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD31126C8FA5600E90F28 /* SwitchVC.xib */; };
 		43C0490922B74A9A890C9422 /* Pods_testnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		1DAFA18F26C79DE6008B6CB9 /* IconImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageCell.swift; sourceTree = "<group>"; };
 		1DAFA19026C79DE6008B6CB9 /* IconImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconImageCell.xib; sourceTree = "<group>"; };
 		1DDF929726C85110008F7C96 /* IconImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImagePickerView.swift; sourceTree = "<group>"; };
+		1DDFD31026C8FA5600E90F28 /* SwitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchVC.swift; sourceTree = "<group>"; };
+		1DDFD31126C8FA5600E90F28 /* SwitchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchVC.xib; sourceTree = "<group>"; };
 		6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testnative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD577C1BCF2BFA56A0444A /* Pods-testnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testnative.release.xcconfig"; path = "Target Support Files/Pods-testnative/Pods-testnative.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +159,7 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1DDFD30F26C8FA2A00E90F28 /* Switch */,
 				1D93642226C86A850081C9CF /* Slider */,
 				1DAFA18926C7439A008B6CB9 /* Button */,
 				1D62B53726C663A200D8041D /* TextField */,
@@ -301,6 +306,15 @@
 			path = IconImage;
 			sourceTree = "<group>";
 		};
+		1DDFD30F26C8FA2A00E90F28 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				1DDFD31026C8FA5600E90F28 /* SwitchVC.swift */,
+				1DDFD31126C8FA5600E90F28 /* SwitchVC.xib */,
+			);
+			path = Switch;
+			sourceTree = "<group>";
+		};
 		4B8285FA6647E26C37EAD12E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +397,7 @@
 				1DAFA19226C79DE6008B6CB9 /* IconImageCell.xib in Resources */,
 				1D22999926C71A75003A7FC4 /* SelectionCell.xib in Resources */,
 				1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */,
+				1DDFD31326C8FA5600E90F28 /* SwitchVC.xib in Resources */,
 				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
 				1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */,
 				1D93642726C86AA40081C9CF /* SliderVC.xib in Resources */,
@@ -423,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDFD31226C8FA5600E90F28 /* SwitchVC.swift in Sources */,
 				1D44411626C39FC900CFDB21 /* MenuCell.swift in Sources */,
 				1D60F4DF26C6647F00644F65 /* TextFieldVC.swift in Sources */,
 				1D22999826C71A75003A7FC4 /* SelectionCell.swift in Sources */,
