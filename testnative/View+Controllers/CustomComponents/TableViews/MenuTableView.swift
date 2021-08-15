@@ -12,6 +12,8 @@ class MenuTableView: UITableView {
                                                              type: .Button),
                                                MenuViewModel(image: UIImage(systemName: "textformat.alt")!,
                                                              type: .Label),
+                                               MenuViewModel(image: UIImage(systemName: "map.fill")!,
+                                                             type: .MapView),
                                                MenuViewModel(image: UIImage(systemName: "slider.horizontal.3")!,
                                                              type: .Slider),
                                                MenuViewModel(image: UIImage(systemName: "switch.2")!,
