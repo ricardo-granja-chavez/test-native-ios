@@ -17,7 +17,9 @@ class MenuTableView: UITableView {
                                                MenuViewModel(image: UIImage(systemName: "switch.2")!,
                                                              type: .Switch),
                                                MenuViewModel(image: UIImage(systemName: "text.cursor")!,
-                                                             type: .TextField)]
+                                                             type: .TextField),
+                                               MenuViewModel(image: UIImage(systemName: "location.fill")!,
+                                                             type: .Web)]
     
     public var onTap: (MenuViewModel) -> Void = { (_) in}
 }

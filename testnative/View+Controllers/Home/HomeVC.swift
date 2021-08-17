@@ -32,6 +32,8 @@ class HomeVC: UIViewController {
                 self.navigationController?.pushViewController(SwitchVC(), animated: true)
             case .TextField:
                 self.navigationController?.pushViewController(TextFieldVC(), animated: true)
+            case .Web:
+                self.navigationController?.pushViewController(WebViewVC(), animated: true)
             }
         }
     }
@@ -43,4 +45,5 @@ enum MenuType: String {
     case TextField = "Text Field"
     case Slider = "Slider"
     case Switch = "Switch"
+    case Web = "Web View"
 }

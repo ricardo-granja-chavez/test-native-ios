@@ -30,6 +30,12 @@
 		1D6A5F8826C4DFCD00617EAD /* FontNamesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */; };
 		1D93642626C86AA40081C9CF /* SliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93642426C86AA40081C9CF /* SliderVC.swift */; };
 		1D93642726C86AA40081C9CF /* SliderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D93642526C86AA40081C9CF /* SliderVC.xib */; };
+		1D95145426CB78E2004A50C2 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D95145226CB78E2004A50C2 /* WebViewVC.swift */; };
+		1D95145526CB78E2004A50C2 /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D95145326CB78E2004A50C2 /* WebViewVC.xib */; };
+		1D95145926CB7AF5004A50C2 /* WebViewSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D95145726CB7AF5004A50C2 /* WebViewSettingsVC.swift */; };
+		1D95145A26CB7AF5004A50C2 /* WebViewSettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D95145826CB7AF5004A50C2 /* WebViewSettingsVC.xib */; };
+		1D95145C26CB7D0F004A50C2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D95145B26CB7D0F004A50C2 /* WebKit.framework */; };
+		1D95145E26CB9927004A50C2 /* WebViewSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D95145D26CB9927004A50C2 /* WebViewSettingsViewModel.swift */; };
 		1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */; };
 		1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB681126C3B2B500DBA66A /* ColorCell.swift */; };
 		1DAB681426C3B2B500DBA66A /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB681226C3B2B500DBA66A /* ColorCell.xib */; };
@@ -70,6 +76,12 @@
 		1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontNamesPickerView.swift; sourceTree = "<group>"; };
 		1D93642426C86AA40081C9CF /* SliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderVC.swift; sourceTree = "<group>"; };
 		1D93642526C86AA40081C9CF /* SliderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderVC.xib; sourceTree = "<group>"; };
+		1D95145226CB78E2004A50C2 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		1D95145326CB78E2004A50C2 /* WebViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
+		1D95145726CB7AF5004A50C2 /* WebViewSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewSettingsVC.swift; sourceTree = "<group>"; };
+		1D95145826CB7AF5004A50C2 /* WebViewSettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewSettingsVC.xib; sourceTree = "<group>"; };
+		1D95145B26CB7D0F004A50C2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1D95145D26CB9927004A50C2 /* WebViewSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewSettingsViewModel.swift; sourceTree = "<group>"; };
 		1DAB680E26C3B21800DBA66A /* ColorsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionView.swift; sourceTree = "<group>"; };
 		1DAB681126C3B2B500DBA66A /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		1DAB681226C3B2B500DBA66A /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
@@ -89,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D95145C26CB7D0F004A50C2 /* WebKit.framework in Frameworks */,
 				43C0490922B74A9A890C9422 /* Pods_testnative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,13 +172,14 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1DDFD30F26C8FA2A00E90F28 /* Switch */,
-				1D93642226C86A850081C9CF /* Slider */,
-				1DAFA18926C7439A008B6CB9 /* Button */,
-				1D62B53726C663A200D8041D /* TextField */,
-				1D44411D26C3A6CF00CFDB21 /* Label */,
 				1D44410526C399F100CFDB21 /* HomeVC.swift */,
 				1D44410626C399F100CFDB21 /* HomeVC.xib */,
+				1DAFA18926C7439A008B6CB9 /* Button */,
+				1D44411D26C3A6CF00CFDB21 /* Label */,
+				1D93642226C86A850081C9CF /* Slider */,
+				1DDFD30F26C8FA2A00E90F28 /* Switch */,
+				1D62B53726C663A200D8041D /* TextField */,
+				1D95145126CB78B6004A50C2 /* WebViewVC */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -202,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				1D44411126C39E6400CFDB21 /* MenuViewModel.swift */,
+				1D95145D26CB9927004A50C2 /* WebViewSettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -270,6 +285,25 @@
 			path = Slider;
 			sourceTree = "<group>";
 		};
+		1D95145126CB78B6004A50C2 /* WebViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D95145626CB7ABA004A50C2 /* WebViewConfig */,
+				1D95145226CB78E2004A50C2 /* WebViewVC.swift */,
+				1D95145326CB78E2004A50C2 /* WebViewVC.xib */,
+			);
+			path = WebViewVC;
+			sourceTree = "<group>";
+		};
+		1D95145626CB7ABA004A50C2 /* WebViewConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1D95145726CB7AF5004A50C2 /* WebViewSettingsVC.swift */,
+				1D95145826CB7AF5004A50C2 /* WebViewSettingsVC.xib */,
+			);
+			path = WebViewConfig;
+			sourceTree = "<group>";
+		};
 		1DAB680D26C3B20100DBA66A /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +352,7 @@
 		4B8285FA6647E26C37EAD12E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D95145B26CB7D0F004A50C2 /* WebKit.framework */,
 				6AE22044DF50D7CAD3A50752 /* Pods_testnative.framework */,
 			);
 			name = Frameworks;
@@ -390,6 +425,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D95145526CB78E2004A50C2 /* WebViewVC.xib in Resources */,
+				1D95145A26CB7AF5004A50C2 /* WebViewSettingsVC.xib in Resources */,
 				1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */,
 				1D44410826C399F100CFDB21 /* HomeVC.xib in Resources */,
 				1D60F4E026C6647F00644F65 /* TextFieldVC.xib in Resources */,
@@ -446,8 +483,10 @@
 				1DAFA19126C79DE6008B6CB9 /* IconImageCell.swift in Sources */,
 				1D22999426C719AE003A7FC4 /* SelectionCollectionView.swift in Sources */,
 				1D93642626C86AA40081C9CF /* SliderVC.swift in Sources */,
+				1D95145E26CB9927004A50C2 /* WebViewSettingsViewModel.swift in Sources */,
 				1D44410F26C39DE800CFDB21 /* MenuTableView.swift in Sources */,
 				1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */,
+				1D95145926CB7AF5004A50C2 /* WebViewSettingsVC.swift in Sources */,
 				1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */,
 				1D44410726C399F100CFDB21 /* HomeVC.swift in Sources */,
 				1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */,
@@ -455,6 +494,7 @@
 				1D44411226C39E6400CFDB21 /* MenuViewModel.swift in Sources */,
 				1DDF929826C85110008F7C96 /* IconImagePickerView.swift in Sources */,
 				1D6A5F8826C4DFCD00617EAD /* FontNamesPickerView.swift in Sources */,
+				1D95145426CB78E2004A50C2 /* WebViewVC.swift in Sources */,
 				1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */,
 				1DAFA18C26C743B9008B6CB9 /* ButtonVC.swift in Sources */,
 				1D44410B26C39AAA00CFDB21 /* Constants.swift in Sources */,
