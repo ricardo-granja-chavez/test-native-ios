@@ -22,6 +22,8 @@ class HomeVC: UIViewController {
         menuTableView.rowHeight = MenuCell.height
         menuTableView.onTap = { (item) in
             switch item.type {
+            case .Activity:
+                self.navigationController?.pushViewController(ActivityIndicatorVC(), animated: true)
             case .Button:
                 self.navigationController?.pushViewController(ButtonVC(), animated: true)
             case .Label:
@@ -38,6 +40,7 @@ class HomeVC: UIViewController {
 }
 
 enum MenuType: String {
+    case Activity = "Activity Indicator"
     case Button = "Button"
     case Label = "Label"
     case TextField = "Text Field"

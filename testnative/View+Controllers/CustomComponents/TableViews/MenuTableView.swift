@@ -8,7 +8,9 @@
 import UIKit
 
 class MenuTableView: UITableView {
-    private let collection: [MenuViewModel] = [MenuViewModel(image: UIImage(systemName: "hand.tap.fill")!,
+    private let collection: [MenuViewModel] = [MenuViewModel(image: UIImage(systemName: "rays")!,
+                                                             type: .Activity),
+                                               MenuViewModel(image: UIImage(systemName: "hand.tap.fill")!,
                                                              type: .Button),
                                                MenuViewModel(image: UIImage(systemName: "textformat.alt")!,
                                                              type: .Label),
@@ -18,7 +20,6 @@ class MenuTableView: UITableView {
                                                              type: .Switch),
                                                MenuViewModel(image: UIImage(systemName: "text.cursor")!,
                                                              type: .TextField)]
-    
     public var onTap: (MenuViewModel) -> Void = { (_) in}
 }
 
