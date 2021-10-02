@@ -10,6 +10,9 @@
 		1D22999426C719AE003A7FC4 /* SelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22999326C719AE003A7FC4 /* SelectionCollectionView.swift */; };
 		1D22999826C71A75003A7FC4 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22999626C71A75003A7FC4 /* SelectionCell.swift */; };
 		1D22999926C71A75003A7FC4 /* SelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D22999726C71A75003A7FC4 /* SelectionCell.xib */; };
+		1D38BBF82707E29500580723 /* ActivityIndicatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38BBF62707E29500580723 /* ActivityIndicatorVC.swift */; };
+		1D38BBF92707E29500580723 /* ActivityIndicatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D38BBF72707E29500580723 /* ActivityIndicatorVC.xib */; };
+		1D38BBFB2707E5D600580723 /* ActivityIndicatorStylePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38BBFA2707E5D600580723 /* ActivityIndicatorStylePickerView.swift */; };
 		1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EA26C3927000CFDB21 /* AppDelegate.swift */; };
 		1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F326C3927100CFDB21 /* Assets.xcassets */; };
 		1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */; };
@@ -48,6 +51,9 @@
 		1D22999326C719AE003A7FC4 /* SelectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCollectionView.swift; sourceTree = "<group>"; };
 		1D22999626C71A75003A7FC4 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
 		1D22999726C71A75003A7FC4 /* SelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCell.xib; sourceTree = "<group>"; };
+		1D38BBF62707E29500580723 /* ActivityIndicatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorVC.swift; sourceTree = "<group>"; };
+		1D38BBF72707E29500580723 /* ActivityIndicatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicatorVC.xib; sourceTree = "<group>"; };
+		1D38BBFA2707E5D600580723 /* ActivityIndicatorStylePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStylePickerView.swift; sourceTree = "<group>"; };
 		1D4440E726C3927000CFDB21 /* testnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4440EA26C3927000CFDB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4440F326C3927100CFDB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +111,15 @@
 			path = Selection;
 			sourceTree = "<group>";
 		};
+		1D38BBF52707E26F00580723 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				1D38BBF62707E29500580723 /* ActivityIndicatorVC.swift */,
+				1D38BBF72707E29500580723 /* ActivityIndicatorVC.xib */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
 		1D4440DE26C3927000CFDB21 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +174,7 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D38BBF52707E26F00580723 /* ActivityIndicator */,
 				1DDFD30F26C8FA2A00E90F28 /* Switch */,
 				1D93642226C86A850081C9CF /* Slider */,
 				1DAFA18926C7439A008B6CB9 /* Button */,
@@ -238,6 +254,7 @@
 		1D60F3C526C4336A0017DDDA /* PickerViews */ = {
 			isa = PBXGroup;
 			children = (
+				1D38BBFA2707E5D600580723 /* ActivityIndicatorStylePickerView.swift */,
 				1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */,
 				1DDF929726C85110008F7C96 /* IconImagePickerView.swift */,
 			);
@@ -401,6 +418,7 @@
 				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
 				1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */,
 				1D93642726C86AA40081C9CF /* SliderVC.xib in Resources */,
+				1D38BBF92707E29500580723 /* ActivityIndicatorVC.xib in Resources */,
 				1DAFA18D26C743B9008B6CB9 /* ButtonVC.xib in Resources */,
 				1DAB681426C3B2B500DBA66A /* ColorCell.xib in Resources */,
 			);
@@ -439,12 +457,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDFD31226C8FA5600E90F28 /* SwitchVC.swift in Sources */,
+				1D38BBFB2707E5D600580723 /* ActivityIndicatorStylePickerView.swift in Sources */,
 				1D44411626C39FC900CFDB21 /* MenuCell.swift in Sources */,
 				1D60F4DF26C6647F00644F65 /* TextFieldVC.swift in Sources */,
 				1D22999826C71A75003A7FC4 /* SelectionCell.swift in Sources */,
 				1D44412026C3A6E300CFDB21 /* LabelVC.swift in Sources */,
 				1DAFA19126C79DE6008B6CB9 /* IconImageCell.swift in Sources */,
 				1D22999426C719AE003A7FC4 /* SelectionCollectionView.swift in Sources */,
+				1D38BBF82707E29500580723 /* ActivityIndicatorVC.swift in Sources */,
 				1D93642626C86AA40081C9CF /* SliderVC.swift in Sources */,
 				1D44410F26C39DE800CFDB21 /* MenuTableView.swift in Sources */,
 				1DAB681326C3B2B500DBA66A /* ColorCell.swift in Sources */,
