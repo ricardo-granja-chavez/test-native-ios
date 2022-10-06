@@ -30,6 +30,8 @@ class HomeVC: UIViewController {
                 self.navigationController?.pushViewController(LabelVC(), animated: true)
             case .Slider:
                 self.navigationController?.pushViewController(SliderVC(), animated: true)
+            case .Stepper:
+                self.navigationController?.pushViewController(StepperVC(), animated: true)
             case .Switch:
                 self.navigationController?.pushViewController(SwitchVC(), animated: true)
             case .TextField:
@@ -45,5 +47,6 @@ enum MenuType: String {
     case Label = "Label"
     case TextField = "Text Field"
     case Slider = "Slider"
+    case Stepper = "Stepper"
     case Switch = "Switch"
 }

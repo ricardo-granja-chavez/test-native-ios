@@ -13,6 +13,9 @@
 		1D38BBF82707E29500580723 /* ActivityIndicatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38BBF62707E29500580723 /* ActivityIndicatorVC.swift */; };
 		1D38BBF92707E29500580723 /* ActivityIndicatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D38BBF72707E29500580723 /* ActivityIndicatorVC.xib */; };
 		1D38BBFB2707E5D600580723 /* ActivityIndicatorStylePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38BBFA2707E5D600580723 /* ActivityIndicatorStylePickerView.swift */; };
+		1D38BBFF2708F46D00580723 /* StepperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38BBFD2708F46D00580723 /* StepperVC.swift */; };
+		1D38BC002708F46D00580723 /* StepperVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D38BBFE2708F46D00580723 /* StepperVC.xib */; };
+		1D38BC02270A2EB800580723 /* NumbersPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38BC01270A2EB800580723 /* NumbersPickerView.swift */; };
 		1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4440EA26C3927000CFDB21 /* AppDelegate.swift */; };
 		1D4440F426C3927100CFDB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F326C3927100CFDB21 /* Assets.xcassets */; };
 		1D4440F726C3927100CFDB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4440F526C3927100CFDB21 /* LaunchScreen.storyboard */; };
@@ -54,6 +57,9 @@
 		1D38BBF62707E29500580723 /* ActivityIndicatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorVC.swift; sourceTree = "<group>"; };
 		1D38BBF72707E29500580723 /* ActivityIndicatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicatorVC.xib; sourceTree = "<group>"; };
 		1D38BBFA2707E5D600580723 /* ActivityIndicatorStylePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorStylePickerView.swift; sourceTree = "<group>"; };
+		1D38BBFD2708F46D00580723 /* StepperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperVC.swift; sourceTree = "<group>"; };
+		1D38BBFE2708F46D00580723 /* StepperVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepperVC.xib; sourceTree = "<group>"; };
+		1D38BC01270A2EB800580723 /* NumbersPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersPickerView.swift; sourceTree = "<group>"; };
 		1D4440E726C3927000CFDB21 /* testnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4440EA26C3927000CFDB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4440F326C3927100CFDB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +126,15 @@
 			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
+		1D38BBFC2708F45000580723 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				1D38BBFD2708F46D00580723 /* StepperVC.swift */,
+				1D38BBFE2708F46D00580723 /* StepperVC.xib */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
 		1D4440DE26C3927000CFDB21 = {
 			isa = PBXGroup;
 			children = (
@@ -174,14 +189,15 @@
 		1D44410426C399E400CFDB21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1D38BBF52707E26F00580723 /* ActivityIndicator */,
-				1DDFD30F26C8FA2A00E90F28 /* Switch */,
-				1D93642226C86A850081C9CF /* Slider */,
-				1DAFA18926C7439A008B6CB9 /* Button */,
-				1D62B53726C663A200D8041D /* TextField */,
-				1D44411D26C3A6CF00CFDB21 /* Label */,
 				1D44410526C399F100CFDB21 /* HomeVC.swift */,
 				1D44410626C399F100CFDB21 /* HomeVC.xib */,
+				1D38BBF52707E26F00580723 /* ActivityIndicator */,
+				1DAFA18926C7439A008B6CB9 /* Button */,
+				1D44411D26C3A6CF00CFDB21 /* Label */,
+				1D93642226C86A850081C9CF /* Slider */,
+				1D38BBFC2708F45000580723 /* Stepper */,
+				1DDFD30F26C8FA2A00E90F28 /* Switch */,
+				1D62B53726C663A200D8041D /* TextField */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +273,7 @@
 				1D38BBFA2707E5D600580723 /* ActivityIndicatorStylePickerView.swift */,
 				1D6A5F8726C4DFCD00617EAD /* FontNamesPickerView.swift */,
 				1DDF929726C85110008F7C96 /* IconImagePickerView.swift */,
+				1D38BC01270A2EB800580723 /* NumbersPickerView.swift */,
 			);
 			path = PickerViews;
 			sourceTree = "<group>";
@@ -417,6 +434,7 @@
 				1DDFD31326C8FA5600E90F28 /* SwitchVC.xib in Resources */,
 				1D44411C26C3A61C00CFDB21 /* SplashScreenVC.xib in Resources */,
 				1D44412126C3A6E300CFDB21 /* LabelVC.xib in Resources */,
+				1D38BC002708F46D00580723 /* StepperVC.xib in Resources */,
 				1D93642726C86AA40081C9CF /* SliderVC.xib in Resources */,
 				1D38BBF92707E29500580723 /* ActivityIndicatorVC.xib in Resources */,
 				1DAFA18D26C743B9008B6CB9 /* ButtonVC.xib in Resources */,
@@ -471,6 +489,7 @@
 				1D44411B26C3A61C00CFDB21 /* SplashScreenVC.swift in Sources */,
 				1D44410726C399F100CFDB21 /* HomeVC.swift in Sources */,
 				1D4440EB26C3927000CFDB21 /* AppDelegate.swift in Sources */,
+				1D38BBFF2708F46D00580723 /* StepperVC.swift in Sources */,
 				1D62B53626C653EF00D8041D /* DiagonalView.swift in Sources */,
 				1D44411226C39E6400CFDB21 /* MenuViewModel.swift in Sources */,
 				1DDF929826C85110008F7C96 /* IconImagePickerView.swift in Sources */,
@@ -478,6 +497,7 @@
 				1DAB680F26C3B21800DBA66A /* ColorsCollectionView.swift in Sources */,
 				1DAFA18C26C743B9008B6CB9 /* ButtonVC.swift in Sources */,
 				1D44410B26C39AAA00CFDB21 /* Constants.swift in Sources */,
+				1D38BC02270A2EB800580723 /* NumbersPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

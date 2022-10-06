@@ -16,11 +16,13 @@ class MenuTableView: UITableView {
                                                              type: .Label),
                                                MenuViewModel(image: UIImage(systemName: "slider.horizontal.3")!,
                                                              type: .Slider),
+                                               MenuViewModel(image: UIImage(systemName: "plusminus")!,
+                                                             type: .Stepper),
                                                MenuViewModel(image: UIImage(systemName: "switch.2")!,
                                                              type: .Switch),
                                                MenuViewModel(image: UIImage(systemName: "text.cursor")!,
                                                              type: .TextField)]
-    public var onTap: (MenuViewModel) -> Void = { (_) in}
+    public var onTap: (MenuViewModel) -> Void = { (_) in }
 }
 
 extension MenuTableView: UITableViewDelegate {
